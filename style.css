@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid; */
+}
+
+.container {
+  width: 50%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 15px;
+  width: 370px;
+  height: 220px;
+  border-radius: 14px;
+  background-color: rgb(58, 149, 214);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.card-header h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.card-header h1 span:nth-child(1) {
+  font-style: italic;
+  font-weight: bold;
+}
+.card-header h1 span:nth-child(2) {
+  font-weight: 600;
+}
+.card-header h1 span:nth-child(3) {
+  font-weight: 300;
+}
+
+.card-header .logo img {
+  display: flex;
+  color: #fff;
+}
+
+.card-chip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.card-nomor {
+  margin: 12px auto;
+  height: 30px;
+  width: 80%;
+}
+.card-nomor p {
+  font-family: "JetBrains Mono", monospace;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.card-foot {
+  position: relative;
+  display: flex;
+}
+
+/* .card-foot {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+
+  margin-left: 15px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+} */
+
+.card-foot span:nth-child(1) {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+  margin-right: 10px;
+  margin-left: 15px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+}
+.card-foot span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 65px;
+  margin-right: 10px;
+  margin-left: 15px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1rem;
+}
+
+.card-foot span:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -8px;
+  right: 30px;
+  background-color: rgb(209, 17, 17);
+  border-radius: 50%;
+}
+.card-foot span:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -8px;
+  right: 6px;
+  background-color: rgba(189, 198, 13, 0.7);
+  border-radius: 50%;
+}
+
+/* ---------input area---------- */
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 250px;
+  background-color: rgb(240, 104, 12);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.input-area .input-group {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-basis: 50%;
+  margin: 0 auto 50px;
+}
+
+.input-group .input-nomor,
+.input-group .input-name {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 45%;
+}
+
+.input-area .input-group .input-nomor input,
+.input-area .input-group .input-name input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: 2px solid;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.input-area label,
+.input-area .input-group label {
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-area .input-expired {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 50%;
+}
+
+.input-area .input-expired input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid;
+  border-radius: 3px;
+  padding-left: 5px;
+  outline: none;
+}

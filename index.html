@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card-Credit-Input</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h1>
+            <span>Paspor</span>
+            <span>blue</span>
+            <span>debit</span>
+          </h1>
+          <div class="logo">
+            <img src="logo-bca.svg" width="100px" height="auto" />
+          </div>
+        </div>
+
+        <div class="card-chip">
+          <div class="chip">
+            <img src="panah.png" width="30px" height="40" />
+            <img src="chip.png" width="50px" height="auto" />
+          </div>
+
+          <img src="logo-wifi.png" width="40px" height="40px" />
+        </div>
+
+        <div class="card-nomor">
+          <p>#### #### #### ####</p>
+        </div>
+
+        <div class="card-foot">
+          <span>card name</span>
+          <span class="expired">mm/yy</span>
+          <span class="patern"></span>
+        </div>
+      </div>
+
+      <div class="input-area">
+        <div class="input-group">
+          <div class="input-nomor">
+            <label for="nomor">Masukan No Kartu</label>
+            <input type="tel" max="16" id="nomor" />
+          </div>
+
+          <div class="input-name">
+            <label for="name">Masukan Nama</label>
+            <input type="text" id="name" />
+          </div>
+        </div>
+
+        <div class="input-expired">
+          <label for="expired">Masukan tanggal berlaku</label>
+          <input type="text" id="expired" />
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
