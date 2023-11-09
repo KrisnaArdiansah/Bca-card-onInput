@@ -1,14 +1,20 @@
-document.querySelector("#nomor").oninput = () => {
-  document.querySelector(".card-nomor p").innerText =
-    document.querySelector("#nomor").value;
-};
+// Inpur No Kartu
+const inpNomor = document.querySelector("#nomor");
+inpNomor.addEventListener("input", function () {
+  const cardNomor = document.querySelector(".card-nomor p");
+  cardNomor.innerText = inpNomor.value;
+});
 
-document.querySelector("#name").oninput = () => {
-  document.querySelector(".card-foot span").innerText =
-    document.querySelector("#name").value;
-};
+// Input Nama pemilik
+const inpName = document.querySelector("#name");
+inpName.addEventListener("input", function () {
+  const cardName = document.querySelector(".card-foot span");
+  cardName.innerText = inpName.value;
+});
 
-document.querySelector("#expired").oninput = () => {
-  document.querySelector(".expired").innerText =
-    document.querySelector("#expired").value;
-};
+// Input Exp Kartu
+const inpExp = document.querySelector("#expired");
+inpExp.addEventListener("click", function () {
+  const cardExpired = document.querySelector(".expired");
+  inpExp.innerText - inpExp.value;
+});
